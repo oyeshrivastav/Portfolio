@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ankur-Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+
+  <script>
+    let a;
+    let date;
+    let time;
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    setInterval(() => {
+      a = new Date();
+      date = a.toLocaleDateString(undefined, options);
+      time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+      document.getElementById('time').innerHTML = time + ' on ' + date;
+    }, 700);
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #303736;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <h1>Portfolio...</h1>
+      </a>
+      <span class="navbar-text" id="time" style="color: rgb(194, 227, 248);"> </span>
+    </div>
+  </nav>
+  <!-- main -->
+  <section class="head">
+    <div class="container" style="margin-top: 3%; max-width: 1295px;">
+      <div class="textsection">
+        <h1>hey,</h1>
+        <h2>i'm ankur kumar</h2>
+        <h4>A Information Technology student passionate about
+          <span id="element" style="font-size: 30px; color: #59bd99;"></span>
+        </h4>
+      </div>
+
+      <div class="imagesec">
+        <img src="/imgs/image_mind-removebg-preview (1).png" width="160px" height="160px" class="mind-img" alt="image">
+      </div>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section class="about-me" style="overflow: hidden;">
+    <div class="about-container" id="about">
+      <h1 class="text-center common-heading">About Me</h1>
+      <hr class="w-25 mx-auto">
+      <div class="row aboutrow">
+        <div class="col-md-4 aboutcolumn">
+          <div class="about-photo"><img src="/imgs/IMG_20230330_173831.jpg" width="160px" height="160px" alt="my-image">
+          </div>
+        </div>
+        <div class="col-md-8 aboutpara">
+          <p> It’s my pleasure to introduce myself as Ankur Kumar. I was born and
+            raised in North-East, New Delhi. I have completed my B.Tech in Information Technology from Krishna
+            Engineering College. </p>
+
+          <p>
+            Prior to that, I earned a Diploma in Mechanical Engineering with a focus on Automobiles from Monad
+            University. This combination of education has provided me with a comprehensive understanding of both
+            information technology and engineering principles.
+          </p>
+
+          <p>My strength is my willingness to take on new challenges and strive for perfection. This is because I
+            believe that
+            learning from our successes and failures is the most effective way to shape ourselves in order
+            to achieve our objectives. </p>
+
+          <p> And I believe in myself and my efforts, and I seek fulfillment in all aspects of my life. </p>
+
+          <p> My short-term goal is to excel at the skills I’m learning, take on a challenge in some
+            outstanding businesses,and climb the way up.</p>
+
+          <p> I’m excited to learn more about this opportunity and would be happy to answer any additional
+            questions.</p>
+
+          <p> Don't hesitate to reach out – let's grab a coffee and chat!</p>
+          <br>
+          <a href="/imgs/Resume.pdf" download id="downloadcv">
+            <span style="vertical-align: middle;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                style="fill: black; margin-right: 5px;">
+                <path d="M20,20H4V18H20ZM12,15,5,10H9V4h6v6h4Z" />
+              </svg>
+              Download Resume
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- skills -->
+
+  <section class="skills">
+    <h1 class="text-center common-heading">Skills</h1>
+    <hr class="w-25 mx-auto" style="margin-bottom: 8%;">
+    <div class="skills-container">
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="/imgs/web.gif" height="70" width="70" alt="" />
+            <h4>HTML</h4>
+          </div>
+          <div class="slide">
+            <img src="/imgs/css.gif" height="70" width="70" alt="" />
+            <h4>CSS</h4>
+          </div>
+          <div class="slide">
+            <img src="/imgs/php.gif" height="70" width="70" alt="" />
+            <h4>PHP</h4>
+          </div>
+          <div class="slide">
+            <img src="/imgs/b.gif" height="70" width="70" alt="" />
+            <h4>Bootstrap</h4>
+          </div>
+          <div class="slide">
+            <img src="/imgs/c.gif" height="70" width="70" alt="" />
+            <h4>C Language</h4>
+          </div>
+          <div class="slide">
+            <img src="/imgs/react.gif" height="70" width="70" alt="" />
+            <h4>React</h4>
+          </div>
+          <div class="slide">
+            <img src="/imgs/tailwindcss.png" height="70" width="70" alt="" />
+            <h4>Tailwind</h4>
+          </div>
+          <div class="slide">
+            <img src="/imgs/database.gif" height="70" width="70" alt="" />
+            <h4>SQL</h4>
+          </div>
+          <div class="slide">
+            <img src="/imgs/firebase.gif" height="70" width="70" alt="" />
+            <h4>Firebase</h4>
+          </div>
+          <div class="slide">
+            <img src="/imgs/canva.gif" height="70" width="70" alt="" />
+            <h4>Canva</h4>
+          </div>
+          <div class="slide">
+            <img src="/imgs/figma.gif" height="70" width="70" alt="" />
+            <h4>Figma</h4>
+          </div>
+          <div class="slide">
+            <img src="/imgs/video-camera.gif" height="70" width="70" alt="" />
+            <h4>Video Editing</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- projects -->
+
+  <section class="projects">
+    <div class="project-container" id="projects">
+      <h1 class="text-center common-heading">Projects</h1>
+      <hr class="w-25 mx-auto" style="margin-bottom: 8%;">
+      <div class="all-items">
+        <div class="item">
+          <div class="left">
+            <div class="img"><img src="./imgs/dmrc.jpeg" height="100%" width="100%" alt=""></div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Discussion forum</h2>
+            <h3 class="project-sub-title">Online real time Discussion.</h3>
+            <p class="project-desc">I made this application for a <b>Delhi Metro customers.</b> This application is truly Amazing. Here you can discuss our problems with your Colleges constantly inside a secure environment and there will be no information reserved after the end of the session.</p>
+            <div class="buttons">
+              <a href="#" class="primary-btn">Know More</a>
+              <a href="https://dmrcforum.000webhostapp.com/index.php" class="primary-btn outline external-link"> <span>Preview</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="./imgs/hospital-web-code.jpg" height="100%" width="100%" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Hospital Website
+            </h2>
+            <h3 class="project-sub-title">Hospital Management UI Design.</h3>
+            <p class="project-desc">Intuitive UI design for hospital management, streamlining operations and improving patient care. User-friendly interface reduces errors and boosts staff efficiency. Enhanced navigation and communication for better healthcare outcomes.</p>
+            <div class="buttons">
+              <a href="#" class="primary-btn">Know More</a>
+              <a href="#" class="primary-btn outline external-link"> <span>Preview</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="./imgs/food-app-UI.jpeg" height="100%" width="100%" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Food App Ui Design</h2>
+            <h3 class="project-sub-title">Designing Food Experiences</h3>
+            <p class="project-desc">Designed a flavorful food app UI in Figma, blending modern aesthetics with user-friendly functionality. This culinary interface guides users through a satisfying journey of food discovery, ordering, and enjoyment, making every interaction a treat for the senses.</p>
+            <div class="buttons">
+              <a href="#" class="primary-btn">Know More</a>
+              <a href="#" class="primary-btn outline external-link"> <span>Preview</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="./imgs/achieve and impact welfare foundation.jpg" height="100%" width="100%" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Welfare foundation logo</h2>
+            <h3 class="project-sub-title">Logo Design Project</h3>
+            <p class="project-desc">Designed a unique logo for <b>Achieve and Impact Welfare Foundation</b> using color, typography, shapes, texture, and imagery in Canva. The final design enhances their brand identity and showcases my effective design skills.</p>
+            <div class="buttons">
+              <a href="#" class="primary-btn">Know More</a>
+              <a href="https://www.canva.com/design/DAGO8hdFFLk/nL45xTNu5K7ydq6rxMmdBA/edit?utm_content=DAGO8hdFFLk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="primary-btn outline external-link"> <span>Preview</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="./image/project-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Task List Ui Design</h2>
+            <h3 class="project-sub-title">A website for music studio</h3>
+            <p class="project-desc">Piranz is one of the famous music composer in UAE. The challenge was to keep the
+              music environment in the web. It was
+              hard but in the end
+              we provided a good quality website that satisfied the client.</p>
+            <div class="buttons">
+              <a href="#" class="primary-btn">Know More</a>
+              <a href="#" class="primary-btn outline external-link"> <span>Preview</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- stats -->
+  <section class="stats">
+    <div class="stats-container" id="stats">
+      <h1 class="text-center common-heading">Stats</h1>
+      <hr class="w-25 mx-auto">
+        <div class="all-items">
+          <div class="item">
+            <h2 class="number">20+</h2>
+            <h3 class="stats-sub-heading">Projects done</h3>
+            <p>I worked on more than 20+ projects. I know how to make things fascinating and eye-catching. Making high
+              performance website is always a sign of mine.</p>
+          </div>
+          <div class="item">
+            <h2 class="number">15+</h2>
+            <h3 class="stats-sub-heading">Happy clients</h3>
+            <p>I worked with more than 15+ clients. Client satisfaction is my main priority. I generally attempt to
+              complete the work
+              before the deadline.</p>
+          </div>
+          <div class="item">
+            <h2 class="number">2+</h2>
+            <h3 class="stats-sub-heading">Years experience</h3>
+            <p>I worked with more than 15+ clients. Client satisfaction is my main priority. I generally attempt to
+              complete the work
+              before the deadline.</p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+
+  <section class="contact-section">
+    <div class="contact-divide">
+      <div class="contactleft">
+        <h1 class="common-heading">Contact me</h1>
+        <div class="alert">Message sent successfully</div>
+        <form class="row g-3" action="" method="POST" id="contactForm">
+          <div class="col-md-6">
+            <label for="validationDefault01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstname" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastname" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailid">
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault05" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" id="phonenumber" required>
+          </div>
+          <select class="form-select col-md-6" aria-label="Default select example" id="works">
+            <option selected>Select One</option>
+            <option value="1. Ui/Ux">Ui/Ux</option>
+            <option value="2. Web development">Web development</option>
+            <option value="3. Manual Testing">Manual Testing</option>
+            <option value="4. Database Testing">Database Testing</option>
+            <option value="5. Logo Making">Logo Making</option>
+            <option value="6. Video Editing">Video Editing</option>
+          </select>
+          <div class="col-md-10">
+            <label for="message">Message:</label>
+            <textarea id="contentmsg" name="message" rows="4" class="form-control" required></textarea>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+      <div class="contactright">
+        <img src="/imgs/contact-us-mobile.gif" alt="">
+      </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="scroll-to-top" title="Scroll to top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
+        <path d="M12 4.5L7.5 9h5v7h1V9h5z" />
+      </svg>
+    </a>
+  </section>
+
+  <!--footer-->
+  <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 170 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(114,137,218,0.7)" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(114,137,218,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(114,137,218,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#7289da" />
+      </g>
+    </svg>
+  </div>
+
+  <footer class="page-footer font-small unique-color-dark pt-4">
+    <div class="footer-copyright text-center py-3">
+      <h7>© 2024 Copyright:</h7>
+      <h7 href="https://discord.gg/uRqH5UT"> Ankur Kumar</h7>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Programming', 'Design', 'Websites', 'Webapps', 'Games', 'ux/ui', 'Mobile apps'],
+      typeSpeed: 70,
+    });
+  </script>
+
+  <script>
+    // Show or hide the scroll-to-top button based on scroll position
+    window.addEventListener('scroll', function () {
+      const scrollToTopBtn = document.getElementById('scroll-to-top');
+      if (window.scrollY > 6000) { // Show button after scrolling down 400px
+        scrollToTopBtn.classList.add('show');
+      } else {
+        scrollToTopBtn.classList.remove('show');
+      }
+    });
+
+    // Smooth scroll to top when button is clicked
+    document.getElementById('scroll-to-top').addEventListener('click', function (event) {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+  <!-- connectDB using firebase -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="./mail.js"></script>
+
+</body>
+
+</html>
