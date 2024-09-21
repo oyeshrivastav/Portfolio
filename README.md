@@ -13,4 +13,4 @@ skills, and contact information, designed to highlight a developer's or designer
 Clone the repository: git clone https://github.com/yourusername/portfolio.git
 Open the index.html file in your browser to view the portfolio.
 
-**see the result here👉**:
+**see the result here👉**:https://oyeshrivastav.github.io/portfolio/
